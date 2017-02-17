@@ -12,6 +12,9 @@
     {{/get}}
 {{/is}}
 
+{{!-- Ad home top --}}
+{{>"ad-home-top"}}
+
 {{!-- All entry --}}
 <section class="homePage u-wrap">
     <div class="feed-entry-content u-marginTop30 u-marginBottom15 u-maxWidth1000 u-marginAuto">
@@ -19,6 +22,9 @@
             {{!-- This is the post loop - each post will be output using this markup --}}
             <div class="row">{{#foreach posts}} {{>"entry"}} {{/foreach}} </div>
         </div>
+
+        {{!-- Ad home bottom --}}
+        {{>"ad-home-bottom"}}
     </div>
 
     {{!-- Pagination --}}
