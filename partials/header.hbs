@@ -4,7 +4,7 @@
         {{!-- background dark if home have image --}}
         {{#is "home"}}
             {{#if @blog.cover}}
-            <span class="u-absolute0 u-backgroundSizeCover u-hide-before-md cover-lazy lazy" data-original="{{@blog.cover}}"></span>
+            <span class="u-absolute0 u-backgroundSizeCover u-hide-before-md" style="background-image: url('{{@blog.cover}}')"></span>
             <span class="u-absolute0 u-backgroundDark u-hide-before-md"></span>
             {{else}}
             <span class="u-absolute0 u-hide-before-md" style="background:rgba(0,0,0,.175)"></span>
@@ -16,9 +16,9 @@
                 {{!-- header logo --}}
                 <div class="u-flex1">
                 {{#is "home"}}
-                <h1><a class="header-logo u-flexCenter u-relative" href="{{@blog.url}}">{{#if @blog.logo}}<img src="{{@blog.logo}}" alt="{{@blog.title}}"/>{{else}}<span class="u-fontSizeJumbo u-md-fontSizeLarger u-fontWeightSemibold">{{@blog.title}}</span>{{/if}}</a></h1>
+                <h1><a class="header-logo u-flexCenter u-relative" href="{{@blog.url}}"><span class="u-fontSizeJumbo u-md-fontSizeLarger u-fontWeightSemibold">{{@blog.title}}</span></a></h1>
                 {{else}}
-                <a class="header-logo u-flexCenter u-relative" href="{{@blog.url}}">{{#if @blog.logo}}<img src="{{@blog.logo}}" alt="{{@blog.title}}"/>{{else}}<span class="u-fontSize36 u-fontWeightSemibold">{{@blog.title}}</span>{{/if}}</a>
+                <a class="header-logo u-flexCenter u-relative" href="{{@blog.url}}">{{#if @blog.logo}}<img src="{{@blog.logo}}" alt="{{@blog.title}}"/>{{/if}}&nbsp;<span class="u-fontSize36 u-fontWeightSemibold">{{@blog.title}}</span></a>
                 {{/is}}
                 </div>
                 <div class="u-flex1 u-flex u-flexEnd u-headerColorLink">

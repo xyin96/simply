@@ -1,19 +1,18 @@
 {
-  "name": "simply-godofredoninja",
+  "name": "simply-xyin96",
   "version": "0.0.2",
-  "description": "simply theme for ghost by @GodoFredoNinja",
+  "description": "simply theme for ghost forked by @xyin96",
   "author": {
-    "name": "GodoFredoNinja",
-    "email": "hello@godofredo.ninja",
-    "url": "https://godofredo.ninja"
+    "name": "xyin96",
+    "email": "yin530@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/godofredoninja/simply"
+    "url": "https://github.com/xyin96/simply"
   },
   "bugs": {
-    "url": "https://github.com/godofredoninja/simply/issues",
-    "email": "hello@godofredo.ninja"
+    "url": "https://github.com/xyin96/simply/issues",
+    "email": "yin530@gmail.com"
   },
   "scripts": {},
   "license": "GPL 3",
